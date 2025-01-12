@@ -13,7 +13,7 @@ export default function Index() {
       
       <View className="flex-1">
         {/* Title Section */}
-        <Text className="text-6xl font-montserrat color-text-primary text-center mt-8 relative z-10">
+        <Text className="text-6xl font-montserrat color-text-primary text-center mt-20 pt-12 relative z-10">
           Neuron Dice
         </Text>
         {/* Links Section */}
