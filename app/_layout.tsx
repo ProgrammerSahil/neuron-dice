@@ -8,6 +8,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
     Montserrat: require("../assets/fonts/Montserrat.ttf"),
+    JosefinSans: require("../assets/fonts/JosefinSans.ttf"),
   });
   useEffect(() => {
     if (fontsLoaded) {
