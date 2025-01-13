@@ -22,7 +22,7 @@ module.exports = {
           secondary: "#A3A1FF",
         },
         button: {
-          background: "#8B8BFF",
+          background: "#d0e6f3",
           hover: "#9F9FFF",
           text: "#1E1E1E",
         },
