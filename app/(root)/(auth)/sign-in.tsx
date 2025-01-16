@@ -11,7 +11,9 @@ const SignIn = () => {
     >
     <SafeAreaView className="h-full">
 
-      <Text className='color-text-primary text-center mt-20 text-5xl font-josefinSans font-semibold'>Sign In</Text>
+      <Text className='color-text-primary text-center mt-20 text-5xl font-josefinSans font-bold'>Sign In</Text>
+      <Text className="text-center mt-14 color-text-secondary font-josefinSans text-3xl ">Interesting articles for you{"\n"}</Text>
+      <Text className='text-center color-text-secondary font-josefinSans text-3xl'>From all over the <Text className='font-bold'>internet</Text></Text>
     </SafeAreaView>
     </ImageBackground>
   )
