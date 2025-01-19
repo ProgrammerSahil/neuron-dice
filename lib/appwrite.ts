@@ -17,6 +17,9 @@ client
 export const avatar = new Avatars(client);
 export const account = new Account(client);
 
+
+
+
 export async function login(){
     try {
         const redirectUri = Linking.createURL('/');
@@ -61,7 +64,7 @@ export async function logout(){
     }
 }
 
-export async function getUser(){
+export async function getCurrentUser(){
     try {
         const response = await account.get();
         if(response.$id){
