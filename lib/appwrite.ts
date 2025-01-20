@@ -1,5 +1,6 @@
 import {Account, Avatars, Client, OAuthProvider} from "react-native-appwrite";
 import * as Linking from 'expo-linking';
+import { fetchArticles } from './wikipedia';
 import { openAuthSessionAsync } from "expo-web-browser";
 export const config = {
     platform: 'com.jsm.neurondice',
@@ -79,4 +80,20 @@ export async function getCurrentUser(){
         console.error(error);
         return null;
     }
+}
+
+export async function getUserPreferredArticles() {
+  try {
+    const user = await getCurrentUser();
+    if (!user) throw new Error('User not logged in');
+
+    // Assume preferences are stored in user.prefs or similar
+    const preferences = user.prefs || ['technology', 'science']; 
+    const articles = await fetchArticles(preferences);
+
+    return articles;
+  } catch (error) {
+    console.error('Error fetching preferred articles:', error);
+    return null;
+  }
 }
