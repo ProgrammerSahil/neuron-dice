@@ -3,14 +3,12 @@ import { Link } from "expo-router";
 
 export default function Index() {
   return (
-    
     <ImageBackground
-      source={require('../../../assets/images/background.jpg')}
+      source={require("../../../assets/images/background.jpg")}
       className="flex-1"
       resizeMode="cover"
-      blurRadius={4} 
+      blurRadius={4}
     >
-      
       {/* Dark overlay */}
       <View className="absolute inset-0 bg-black/70" />
       <View className="flex-1">
@@ -18,7 +16,7 @@ export default function Index() {
         <Text className="text-5xl font-josefinSans font-bold color-text-primary text-center mt-20 pt-12 px-3 relative z-10">
           Neuron Dice
         </Text>
-        
+
         {/* Subtitle */}
         <Text className="text-3xl font-josefinSans color-text-primary text-center p-14 relative z-10">
           random interesting articles from the internet
